@@ -6,7 +6,7 @@
 volatile byte receiveValue;       
 
 void setup() {
-  Wire.begin(9);//自分のアドレスを自由に設定。宛先に使われる                   
+  Wire.begin(9);//自分のアドレスを自由に設定。宛先に使われる。8以上の値                   
   Wire.onReceive(dataReceive);      
   Serial.begin(9600);
   pinMode(LED, OUTPUT);
